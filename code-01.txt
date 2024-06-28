@@ -1,0 +1,36 @@
+Các câu lệnh thường sử dụng trong Git:
+
+1. **Khởi tạo repository**:
+   - `git init` - Khởi tạo một repository Git mới tại thư mục hiện tại.
+   - `git clone <url>` - Sao chép một repository hiện có về máy tính của bạn.
+
+2. **Thêm và commit các thay đổi**:
+   - `git add <file>` - Thêm một file vào khu vực chờ commit.
+   - `git add .` - Thêm tất cả các file thay đổi vào khu vực chờ commit.
+   - `git commit -m "Thông điệp commit"` - Commit các thay đổi với một thông điệp mô tả.
+
+3. **Làm việc với nhánh (branch)**:
+   - `git branch` - Liệt kê tất cả các nhánh.
+   - `git branch <tên_nhánh>` - Tạo một nhánh mới.
+   - `git checkout <tên_nhánh>` - Chuyển sang nhánh khác.
+   - `git merge <tên_nhánh>` - Merge nhánh được chỉ định vào nhánh hiện tại.
+
+4. **Đẩy và kéo các thay đổi**:
+   - `git push` - Đẩy các commit lên repository từ xa.
+   - `git push origin <tên_nhánh>` - Đẩy các commit của nhánh lên repository từ xa.
+   - `git pull` - Kéo các thay đổi mới nhất từ repository từ xa về máy tính của bạn.
+
+5. **Kiểm tra lịch sử**:
+   - `git log` - Xem lịch sử các commit.
+   - `git status` - Kiểm tra trạng thái của repository hiện tại.
+   - `git diff` - Xem các thay đổi chưa được commit.
+
+6. **Hoàn tác các thay đổi**:
+   - `git reset <commit_hash>` - Hoàn tác các commit về một điểm cụ thể.
+   - `git revert <commit_hash>` - Tạo một commit mới để hoàn tác các thay đổi của một commit cụ thể.
+
+7. **Quản lý remote repository**:
+   - `git remote add origin <url>` - Liên kết repository hiện tại với một remote repository.
+   - `git remote -v` - Xem thông tin về các remote repository.
+
+...

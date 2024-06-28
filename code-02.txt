@@ -1,0 +1,62 @@
+Danh sách chi tiết tất cả các câu lệnh Git thường được sử dụng:
+
+1. **Khởi tạo và Sao chép Repository**:
+   - `git init` - Khởi tạo một repository Git mới tại thư mục hiện tại.
+   - `git clone <url>` - Sao chép một repository hiện có về máy tính của bạn.
+   - `git remote add <tên> <url>` - Thêm một remote repository mới.
+   - `git remote -v` - Xem thông tin về các remote repository.
+   - `git remote rename <tên_cũ> <tên_mới>` - Đổi tên một remote repository.
+   - `git remote rm <tên>` - Xóa một remote repository.
+
+2. **Thêm và Commit các Thay Đổi**:
+   - `git add <file>` - Thêm một file vào khu vực chờ commit.
+   - `git add .` - Thêm tất cả các file thay đổi vào khu vực chờ commit.
+   - `git add -p` - Thêm các thay đổi được chọn vào khu vực chờ commit.
+   - `git commit -m "Thông điệp commit"` - Commit các thay đổi với một thông điệp mô tả.
+   - `git commit --amend` - Sửa lại commit gần nhất.
+   - `git reset HEAD <file>` - Loại bỏ file khỏi khu vực chờ commit.
+
+3. **Làm việc với Nhánh (Branch)**:
+   - `git branch` - Liệt kê tất cả các nhánh.
+   - `git branch <tên_nhánh>` - Tạo một nhánh mới.
+   - `git checkout <tên_nhánh>` - Chuyển sang nhánh khác.
+   - `git checkout -b <tên_nhánh>` - Tạo và chuyển sang nhánh mới.
+   - `git merge <tên_nhánh>` - Merge nhánh được chỉ định vào nhánh hiện tại.
+   - `git branch -d <tên_nhánh>` - Xóa một nhánh.
+   - `git branch -m <tên_cũ> <tên_mới>` - Đổi tên một nhánh.
+
+4. **Đẩy và Kéo các Thay Đổi**:
+   - `git push` - Đẩy các commit lên repository từ xa.
+   - `git push origin <tên_nhánh>` - Đẩy các commit của nhánh lên repository từ xa.
+   - `git push -u origin <tên_nhánh>` - Đẩy và liên kết nhánh hiện tại với remote.
+   - `git pull` - Kéo các thay đổi mới nhất từ repository từ xa về máy tính của bạn.
+   - `git pull --rebase` - Kéo các thay đổi và rebase lại commit của bạn.
+   - `git fetch` - Lấy tất cả các nhánh từ repository từ xa về máy tính.
+
+5. **Kiểm tra Lịch Sử**:
+   - `git log` - Xem lịch sử các commit.
+   - `git log --oneline` - Xem lịch sử các commit dạng một dòng.
+   - `git log --graph` - Xem lịch sử các commit dạng đồ thị.
+   - `git status` - Kiểm tra trạng thái của repository hiện tại.
+   - `git diff` - Xem các thay đổi chưa được commit.
+   - `git show <commit_hash>` - Xem chi tiết của một commit cụ thể.
+
+6. **Hoàn Tác Các Thay Đổi**:
+   - `git reset <commit_hash>` - Hoàn tác các commit về một điểm cụ thể.
+   - `git reset --hard <commit_hash>` - Hoàn tác các commit về một điểm cụ thể và xóa các thay đổi.
+   - `git revert <commit_hash>` - Tạo một commit mới để hoàn tác các thay đổi của một commit cụ thể.
+   - `git checkout -- <file>` - Hoàn tác các thay đổi chưa được commit của một file.
+
+7. **Quản Lý Xung Đột (Conflict)**:
+   - `git merge --abort` - Hủy bỏ quá trình merge đang diễn ra.
+   - `git rebase --abort` - Hủy bỏ quá trình rebase đang diễn ra.
+   - `git cherry-pick <commit_hash>` - Áp dụng một commit cụ thể vào nhánh hiện tại.
+
+8. **Các Câu Lệnh Khác**:
+   - `git stash` - Lưu trữ các thay đổi chưa được commit.
+   - `git stash pop` - Khôi phục các thay đổi đã được lưu trữ.
+   - `git clean -f` - Xóa các file chưa được theo dõi.
+   - `git rm <file>` - Xóa một file khỏi repository.
+   - `git mv <file_cũ> <file_mới>` - Di chuyển hoặc đổi tên một file.
+
+...
